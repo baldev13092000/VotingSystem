@@ -1,0 +1,8 @@
+.container{
+  border: 10px;
+  text-align:  center;
+  border-color: black;
+  border-style: double;
+  padding-top: auto;
+  margin: auto;
+}

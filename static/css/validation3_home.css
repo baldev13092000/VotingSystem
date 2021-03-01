@@ -1,0 +1,10 @@
+a{
+  border: 5px solid black;
+  padding: 10px;
+  background-color: #4E9CAF;
+  display: inline-block;
+  color: black;
+}
+.container{
+  text-align: center;
+}

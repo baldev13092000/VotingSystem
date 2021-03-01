@@ -1,0 +1,25 @@
+#img1{
+  width: 25%;
+}
+.c1{
+  float: left;
+  padding: 5px;
+}
+.c2{
+  float: inherit;
+  padding: 10px;
+}
+#img2{
+  width: 18%;
+}
+
+a{
+  border: 5px solid black;
+  padding: 10px;
+  background-color: #4E9CAF;
+  display: inline-block;
+  color: black;
+}
+#cont1{
+  text-align: center;
+}
