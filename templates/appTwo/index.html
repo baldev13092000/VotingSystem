@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/style1.css" %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href={% static "css/materialize.min.css" %} media="screen,projection" />
+
+    <style media="screen">
+    body{
+      background-image: url('{% static "images/Background.jpg"%}');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    #Voteimage{
+      width:125%;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="blue darken-1">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">National Voting System</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'appTwo:index'%}">Home</a></li>
+        <li><a href="{% url 'appTwo:statistics' %}">Statistics</a></li>
+        <li><a href="{% url 'appTwo:users' %}">New User Registration</a></li>
+        <li><a href="{% url 'appTwo:login' %}">Login</a></li>
+        <li><a href="{% url 'appTwo:NewSmartCard' %}">New Smart Card</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="row-container">
+  <h3><b>Why your vote matters ?</b></h3>
+  <h6> If you ever think that just one vote in a sea of millions cannot make much of a difference, It makes a lot.</h6>
+  <h6>Because of this, and the fact that voter quite literally have the future of the country in their hands, We urge any and all people reading this to realize how big a part of democracy voting is, and to use the opportunities given to them to make a difference in India.</h6>
+</div>
+<div class="container">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color:#1E88E5;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img id="Voteimage" src="{% static "images/Back1.jpg"%}">
+      </div>
+
+      <div class="item">
+        <h3 style="text-align:center;color:white;">About us</h3>
+        <h4 style="color:white;padding-top:15px;padding-left:20px;padding-right:20px;">Smart voting system will be secure and reduce the inconvenience of voters.Using Blockchain technology the system will be made more secure and free from any frauds.Basically the system will eradicate dummy votes by use of smart cards. The smart card will have the biometric information(retinal images) and when swiped ,the local machine will check for the correct biometrics of the person.</h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="container">
+  <div class="card-group">
+    <div class="row ">
+        <div class="col-sm-6">
+          <div class="card  bg-primary mb-3" style="max-width: 35rem;">
+            <div class="card" style="width: 25rem;">
+              <img  id="cardimg1" class="card-img-top" src="{% static "images/hand2.PNG"%}">
+              <div class="card-img-overlay">
+                <h5 class="card-title" style="color:black;"> Vote status </h5>
+                <p class="card-text" style="color:black;">Click here to check the voting status of the voter</p>
+                <a href="{% url 'appTwo:validation2' %}" class="btn btn-primary">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card bg-primary mb-3" style="max-width: 35rem;">
+            <div class="card" style="width: 25rem;">
+              <img  id="cardimg1" class="card-img-top" src="{% static "images/hand2.PNG"%}">
+              <div class="card-img-overlay">
+                <h5 class="card-title" style="color:black;">Biometric verification</h5>
+                <p class="card-text" style="color:black;">Click here to verify the voter's biometrics </p>
+                <a href="{% url 'appTwo:validation4' %}" class="btn btn-primary">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+  </div>
+</div>
+</div>
+
+<footer class="page-footer blue darken-1">
+  <div class="container" id="foot1">
+    <div class="row">
+      <div class="col l6 s18">
+        <h5 class="white-text">Contact us</h5>
+        <h6>2018.baldev.sundarani@ves.ac.in</h6>
+        <h6>2018.simran.gurnani@ves.ac.in</h6>
+        <h6>2018.abhishek.waghmare@ves.ac.in</h6>
+        <h6>2018.hitesh.santani@ves.ac.in</h6>
+
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Quick Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">About us</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Contact us </a></li>
+          <li><a>1</a></li>
+          <li><a>2</a></li>
+          <li><a>3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+
+      <a class="grey-text text-lighten-4 right" href="#!"></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src={% static "js/materialize.min.js"%}></script>
+  </body>
+</html>

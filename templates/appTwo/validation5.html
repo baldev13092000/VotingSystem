@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/validation6.css" %}">
+    <style media="screen">
+    body{
+      background-image: url('{% static "images/Background.jpg"%}');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #0091EA";>
+      <h1 class="navbar-brand" style="color:White;">National Voting System</h1>
+      <h2 class="navbar-brand" style="color:white;">Biometric verification Process</h2>
+    </nav>
+
+
+
+    <div class="container">
+      <div class="r1">
+        <div class="c1">
+          <h4>Image_1</h4>
+          <img id=img1 src="{% static "images/Img_1_1_1.jpg" %}">
+        </div>
+        <div class="c1">
+          <h4>Image_2</h4>
+          <img id=img1 src="{% static "images/Img_1_1_2.jpg" %}">
+        </div>
+
+        <div class="r2">
+          <div class="c2">
+            <h4>Image_3</h4>
+            <img id=img2 src="{% static "images/Img_1_1_3.jpg" %}">
+          </div>
+          <div class="c2">
+            <h4>Image_4</h4>
+            <img id=img2 src="{% static "images/Img_1_1_4.jpg" %}">
+          </div>
+      </div>
+      </div>
+      <div class="container" id ="cont1">
+      <div class="c3">
+        <h4>Image_5</h4>
+        <img id=img2 src="{% static "images/Img_1_1_5.jpg" %}">
+      </div>
+      <h1>                          </h1>
+      <a href="{% url 'appTwo:validation6' %}">NEXT</a>
+      </div>
+  </div>
+
+  </body>
+</html>

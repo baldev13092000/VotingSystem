@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/validation3.css" %}">
+    <style media="screen">
+    body{
+      background-image: url('{% static "images/Background.jpg"%}');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #0091EA";>
+      <h1 class="navbar-brand" style="color:White;">National Voting System</h1>
+      <h2 class="navbar-brand" style="color:white;">Biometric verification Process</h2>
+    </nav>
+    <div class="container">
+    <h1>Smart card is being processed , click next to see details</h1>
+    <a href="{% url 'appTwo:validation4' %}">NEXT</a>
+  </div>
+  </body>
+</html>

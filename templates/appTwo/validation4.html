@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/validation5.css" %}">
+    <style media="screen">
+    body{
+      background-image: url('{% static "images/Background.jpg"%}');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #0091EA";>
+      <h1 class="navbar-brand" style="color:White;">National Voting System</h1>
+      <h2 class="navbar-brand" style="color:white;">Biometric verification Process</h2>
+    </nav>
+    <div class="container">
+      <h1 class ="pd">Personal Details</h1>
+      <div class="r1">
+        <div class="c1">
+          <h4>Election ID : 30001</h4>
+        </div>
+      </div>
+      <div class="r2">
+        <div class="c2">
+          <h4>Name : Rohit G</h4>
+        </div>
+      </div>
+      <div class="r3">
+        <div class="c3">
+          <h4>DOB : 27/10/2000</h4>
+        </div>
+      </div>
+      <div class="r4">
+        <div class="c4">
+          <h4>Sex : Male</h4>
+        </div>
+      </div>
+      <div class="r5">
+        <div class="c5">
+          <h4>MobileNo : 9988882323</h4>
+        </div>
+      </div>
+      <div class="r5">
+        <div class="c5">
+          <h4>Address : house no.14,sindhi society,chembur east,Mumbai</h4>
+        </div>
+      </div>
+      <a href="{% url 'appTwo:validation5' %}">NEXT</a>
+    </div>
+
+  </body>
+</html>
